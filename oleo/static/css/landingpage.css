@@ -1,0 +1,9 @@
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d5f0d4+0,7ede94+100 */
+    background: rgb(213,240,212); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(213,240,212,1) 0%, rgba(126,222,148,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(213,240,212,1) 0%,rgba(126,222,148,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(213,240,212,1) 0%,rgba(126,222,148,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5f0d4', endColorstr='#7ede94',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
