@@ -87,31 +87,13 @@ figcaption {
   text-align: center;
 }
 
-.hero-section {
-  position: relative;
-  overflow: hidden;
-  height: 800px;
-  padding-top: 185px;
-  background-color: #ececec;
-}
-
-.hero-section.color {
-  height: auto;
-  padding-top: 225px;
-  padding-bottom: 185px;
-  background-color: #1f6fff;
-  color: #fff;
-  font-weight: 600;
-}
-
 .navbar {
   position: absolute;
   left: 0px;
   top: 0px;
   right: 0px;
-  /*padding-top: 30px;*/
-  /*padding-bottom: 20px;*/
-  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .navbar.underline {
