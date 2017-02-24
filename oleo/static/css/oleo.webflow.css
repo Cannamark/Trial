@@ -96,6 +96,20 @@ figcaption {
   padding-bottom: 20px;
 }
 
+.hero-section.color {
+  height: auto;
+  padding-top: 400px;
+  padding-bottom: 185px;
+  background-color: white;
+  background-image: url("../images/oleocbd-large-with-water.png");
+  /*background-image: linear-gradient(180deg, rgba(25, 27, 31, .9), rgba(25, 27, 31, .8)),url("../images/magunkrol.jpg");*/
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #fff;
+  font-weight: 600;
+}
+
 .navbar.underline {
   padding-bottom: 30px;
   border-bottom: 1px solid hsla(0, 0%, 100%, .2);
@@ -145,6 +159,11 @@ figcaption {
 
 .nav-link:hover {
   border-color: rgba(255, 255, 255, .5);
+  background-color: white;
+}
+
+.nav-link.black:hover {
+  border-color: rgba(0, 0, 0, .5);
   background-color: white;
 }
 
