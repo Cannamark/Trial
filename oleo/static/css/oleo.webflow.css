@@ -1051,16 +1051,6 @@ figcaption {
   padding-right: 30px;
 }
 
-.image-section.trial {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-image: -webkit-linear-gradient(270deg, rgba(31, 111, 255, .7), rgba(31, 111, 255, .7)), url('../images/Photo-1.jpg');
-  background-image: linear-gradient(180deg, rgba(31, 111, 255, .7), rgba(31, 111, 255, .7)), url('../images/Photo-1.jpg');
-  background-position: 0px 0px, 50% 74%;
-  background-size: auto, cover;
-  color: #fff;
-}
-
 .image-section.about-us-3 {
   background-image: url('../images/Photo-5.jpg');
 }
