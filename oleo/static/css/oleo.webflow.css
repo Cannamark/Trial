@@ -3441,15 +3441,6 @@ figcaption {
   background-size: auto, cover;
 }
 
-.subpage-header.about-5 {
-  padding-top: 250px;
-  padding-bottom: 170px;
-  background-image: url('../images/Photo-8.jpg'), -webkit-linear-gradient(270deg, rgba(31, 111, 255, .9), rgba(31, 111, 255, .9)), url('../images/Photo-5_1.jpg');
-  background-image: url('../images/Photo-8.jpg'), linear-gradient(180deg, rgba(31, 111, 255, .9), rgba(31, 111, 255, .9)), url('../images/Photo-5_1.jpg');
-  background-position: 50% 50%, 0px 0px, 0px 0px;
-  background-size: cover, auto, cover;
-}
-
 .white-contact-form {
   width: 60%;
   height: auto;
