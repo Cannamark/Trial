@@ -84,7 +84,7 @@
     <div class="half-content-section w-clearfix">
       <div class="content-section-block">
         <div class="full info section-title-wrapper">
-          <h2 class="section-title">Some information on Oleo&reg; CBD</h2>
+          <h2 class="section-title">Some information on Oleo<span class="smallify">&reg;</span> CBD</h2>
         </div>
         <p class="intro-paragraph">Like Why it is the best CBD product on the market.</p>
         <ul class="checklist w-list-unstyled">
@@ -133,13 +133,13 @@
         <div class="w-slider-mask">
           <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Black_Label_3dMesh_Front.png">
             <div class="hero-slider-content-block">
-              <h1 class="hero-slider-title" data-ix="slide-title" style="color:white;">Oleo&reg; CBD Powder</h1>
+              <h1 class="hero-slider-title" data-ix="slide-title" style="color:white;">Oleo<span class="smallify">&reg;</span> CBD Powder</h1>
               <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s Black Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">Visit the store!</a>
             </div>
           </div>
           <div class="hero-portfolio-slide w-slide"><img class="hero-slider-mockup" sizes="(max-width: 479px) 64vw, (max-width: 767px) 56vw, (max-width: 991px) 324.703125px, 512.6875px" src="../static/images/Oleo_whitelabel.png">
             <div class="hero-slider-content-block">
-              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">Oleo&reg; CBD Powder</h1>
+              <h1 class="hero-slider-title" data-ix="slide-title"style="color:white;">Oleo<span class="smallify">&reg;</span> CBD Powder</h1>
               <p class="hero-slider-text" data-ix="slide-title-2" style="color:white;">Each bag of Oleo’s White Label Powdered THC contains six individual 10mg doses of our Powdered THC candy. That was made using Oleo’s patent pending process.</p><a class="button green outline slider-button w-button" data-ix="slide-title-4" href="https://shop.oleolife.com" style="color:white;">Visit the store!</a>
             </div>
           </div>
@@ -203,7 +203,7 @@
       </div>
     </div>
   </div>
-  <div class="about-us-3 image-section">
+  <div class="about-us-3 image-section" id="contact">
     <div class="image-section-overlay white-gradient">
       <div class="centered container w-container">
         <div class="section-title-wrapper">
@@ -211,21 +211,23 @@
         </div>
         <div class="contact-column-left w-col w-col-6">
           <div class="contact-form-block w-form">
-            <form data-name="Email Form 5" id="wf-form-Email-Form" name="wf-form-Email-Form-5">
+            <form action="{% url 'send_cbd' %}" method="POST" data-name="Email Form 5" id="wf-form-Email-Form" name="wf-form-Email-Form-5">
+            {% csrf_token %}
+            {% if messages %}
+            <ul class="messages">
+              {% for message in messages %}
+              <li {% if message.tags %} class="{{ message.tags }}" {% endif %} style="list-style-type: none; font-size:medium; color:green; font-family: Montserrat, sans-serif;">{{ message }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
               <label class="field-label cbd" for="Name-5">Name:</label>
-              <input class="dark-field w-input" data-name="Name" id="Name-5" maxlength="256" name="Name" required="required" type="text">
+              <input class="dark-field w-input" data-name="name" id="Name-5" maxlength="256" name="name" required="required" type="text">
               <label class="field-label cbd" for="Email-3">Email:</label>
-              <input class="dark-field w-input" data-name="Email" id="Email-3" maxlength="256" name="Email" required="required" type="email">
+              <input class="dark-field w-input" data-name="email" id="Email-3" maxlength="256" name="email" required="required" type="email">
               <label class="field-label cbd" for="field">Message:</label>
-              <textarea class="area dark-field w-input" data-name="Message" id="Message-3" maxlength="5000" name="Message" required="required"></textarea>
+              <textarea class="area dark-field w-input" data-name="message" id="Message-3" maxlength="5000" name="message" required="required"></textarea>
               <input class="button full-submit w-button" data-wait="Please wait..." type="submit" value="Send Email">
             </form>
-            <div class="success-message w-form-done">
-              <p>Thank you! Your submission has been received!</p>
-            </div>
-            <div class="error-bg w-form-fail">
-              <p>Oops! Something went wrong while submitting the form</p>
-            </div>
           </div>
         </div>
         <div class="contact-column-right w-col w-col-6">

@@ -87,6 +87,10 @@ figcaption {
   text-align: center;
 }
 
+.smallify {
+  font-size: 16px;
+}
+
 .navbar {
   position: absolute;
   left: 0px;
