@@ -91,10 +91,10 @@ INSTALLED_APPS += ['storages', ]
 # TODO See: https://github.com/jschneier/django-storages/issues/47
 # Revert the following and use str after the above-mentioned bug is fixed in
 # either django-storage-redux or boto
-AWS_HEADERS = {
-    'Cache-Control': six.b('max-age=%d, s-maxage=%d, must-revalidate' % (
-        AWS_EXPIRY, AWS_EXPIRY))
-}
+# AWS_HEADERS = {
+#     'Cache-Control': six.b('max-age=%d, s-maxage=%d, must-revalidate' % (
+#         AWS_EXPIRY, AWS_EXPIRY))
+# }
 
 # URL that handles the media served from MEDIA_ROOT, used for managing
 # stored files.
