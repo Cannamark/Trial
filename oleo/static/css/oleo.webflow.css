@@ -3402,8 +3402,8 @@ figcaption {
 .subpage-header {
   padding-top: 50px;
   padding-bottom: 100px;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/BeachParty.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/BeachParty.jpg');
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/Beachparty.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../images/Beachparty.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   color: #fff;
