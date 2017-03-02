@@ -1051,12 +1051,6 @@ figcaption {
   padding-right: 30px;
 }
 
-.image-section {
-  background-image: url('../images/Photo-2.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-}
-
 .image-section.trial {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -1644,15 +1638,6 @@ figcaption {
   background-image: url('../images/Concert1.png');
   background-position: 50% 50%;
   background-size: cover;
-}
-
-.image-hero.download {
-  padding-top: 190px;
-  padding-bottom: 120px;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/Photo-2_1.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../images/Photo-2_1.jpg');
-  background-position: 0px 0px, 50% 0px;
-  background-size: auto, cover;
 }
 
 .play-video-title {
@@ -4192,14 +4177,6 @@ figcaption {
 
 .element-container.navigation._2 {
   background-color: #39404d;
-}
-
-.element-container.navigation._3 {
-  height: 120px;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Photo-6.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Photo-6.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
 }
 
 .logo {
