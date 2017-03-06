@@ -68,7 +68,7 @@ X_FRAME_OPTIONS = 'DENY'
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['example.com', ])
 # END SITE CONFIGURATION
 
-INSTALLED_APPS += ['gunicorn', ]
+INSTALLED_APPS += ('gunicorn', )
 
 
 # STORAGE CONFIGURATION
@@ -76,7 +76,7 @@ INSTALLED_APPS += ['gunicorn', ]
 # Uploaded Media Files
 # ------------------------
 # See: http://django-storages.readthedocs.io/en/latest/index.html
-INSTALLED_APPS += ['storages', ]
+INSTALLED_APPS += ('storages', )
 
 # AWS_ACCESS_KEY_ID = env('DJANGO_AWS_ACCESS_KEY_ID')
 # AWS_SECRET_ACCESS_KEY = env('DJANGO_AWS_SECRET_ACCESS_KEY')
@@ -91,10 +91,10 @@ INSTALLED_APPS += ['storages', ]
 # TODO See: https://github.com/jschneier/django-storages/issues/47
 # Revert the following and use str after the above-mentioned bug is fixed in
 # either django-storage-redux or boto
-AWS_HEADERS = {
-    'Cache-Control': six.b('max-age=%d, s-maxage=%d, must-revalidate' % (
-        AWS_EXPIRY, AWS_EXPIRY))
-}
+# AWS_HEADERS = {
+#     'Cache-Control': six.b('max-age=%d, s-maxage=%d, must-revalidate' % (
+#         AWS_EXPIRY, AWS_EXPIRY))
+# }
 
 # URL that handles the media served from MEDIA_ROOT, used for managing
 # stored files.
