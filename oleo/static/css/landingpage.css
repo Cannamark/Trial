@@ -104,8 +104,6 @@ a {
 }
 
 .about-column-left {
-    /*position: absolute;*/
-    /*left: 50%;*/
     float:left;
     padding-right: 0px;
     padding-bottom: 30px;
@@ -115,7 +113,6 @@ a {
 }
 
 .about-column-right {
-    /*position: absolute;*/
     padding-right: 0px;
     padding-bottom: 30px;
     padding-left: 0px;
