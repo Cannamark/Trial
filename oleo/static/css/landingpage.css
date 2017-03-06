@@ -8,6 +8,7 @@ body {
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5f0d4', endColorstr='#7ede94',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     background-image: url("../images/Seattle.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 a {
@@ -103,8 +104,9 @@ a {
 }
 
 .about-column-left {
-    position: absolute;
-    left: 50%;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    float:left;
     padding-right: 0px;
     padding-bottom: 30px;
     padding-left: 0px;
@@ -113,7 +115,7 @@ a {
 }
 
 .about-column-right {
-    position: absolute;
+    /*position: absolute;*/
     padding-right: 0px;
     padding-bottom: 30px;
     padding-left: 0px;
@@ -150,4 +152,24 @@ a {
 }
 .circle:hover{
     background-color: white;
+}
+
+@media (max-width: 479px) {
+  body {
+    background-repeat: no-repeat;
+    height:100%;
+    background-position: 0, 0, 50% 50%;
+  }
+  .about-column-left {
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+  }
+  .subpage-title.smaller {
+    padding-top: 40px;
+  }
+  .circle{
+    height: 200px;
+    width: 200px;
+  }
 }
