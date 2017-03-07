@@ -84,7 +84,7 @@ a {
 }
 
 .nav-link.dropdown-toggle.light {
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 .nav-link.dropdown-toggle.thin-light {
@@ -126,6 +126,23 @@ a {
     font-size: 30px;
 }
 
+.bigger {
+  font-size: 40px;
+  letter-spacing: -2px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.smaller {
+  font-size: 28px;
+}
+
+.smaller.thc {
+  color: #25A8DF;
+}
+
+.smaller.cbd {
+  color: #00a939;
+}
 .page-subtitle {
   display: block;
   width: 20%;
