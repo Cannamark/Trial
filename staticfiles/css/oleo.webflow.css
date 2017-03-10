@@ -175,6 +175,9 @@ figcaption {
   padding-right: 20px;
   text-decoration: none;
 }
+.nav-link.dropdown-toggle:hover {
+  color:black;
+}
 
 .nav-link.dropdown-toggle.w--open {
   background-color: rgba(0, 0, 0, .1);
@@ -622,7 +625,8 @@ figcaption {
 }
 
 .section.buffer {
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   background: #00a939;
   background: -moz-linear-gradient(45deg, #8ab66b 0%, #00a939 100%);
   background: -webkit-linear-gradient(45deg, #8ab66b 0%,#00a939 100%);
@@ -4450,6 +4454,7 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
   .nav-link.dropdown-toggle {
     color: #fff;
   }
+
   .nav-link.light {
     width: 100%;
     max-width: 1500px;
@@ -4475,7 +4480,7 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     border-width: 0px;
   }
   .nav-link.color:hover {
-    color: #fff;
+    color: black;
   }
   .dropdown {
     width: 100%;
@@ -6993,6 +6998,7 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
     padding: 90px 20px 20px;
   }
   .subpage-header.about-3 {
+    background-position: 50% 50%;
     padding-top: 80px;
   }
   .subpage-header.about-5 {
@@ -7058,7 +7064,7 @@ html.w-mod-js *[data-ix="fade-in-on-load-5"] {
   .cta-title.subtitle {
     margin-top: 12px;
     margin-bottom: 6px;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 22px;
     font-weight: 400;
   }
