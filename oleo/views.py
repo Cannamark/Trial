@@ -16,7 +16,7 @@ def send_email_thc(request):
                 messages.success(request, 'Email Recieved!')
             except BadHeaderError:
                 return HttpResponse('Invalid header found')
-            return HttpResponseRedirect('/oleoTHC/#contact')
+            return HttpResponseRedirect('/#contact')
         else:
             return HttpResponse('Make sure all fields are accurate and complete')
 
