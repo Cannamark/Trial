@@ -10,21 +10,18 @@ from django.views import defaults as default_views
 from oleo.views import send_email_thc, send_email_cbd
 
 urlpatterns = [
-    url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
+    # url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
-    url(r'^oleoTHC/$', TemplateView.as_view(template_name='pages/oleothc.html'), name='oleothc'),
-    url(r'^oleoCBD/$', TemplateView.as_view(template_name='pages/oleocbd.html'), name='oleocbd'),
+    url(r'^$', TemplateView.as_view(template_name='pages/oleothc.html'), name='oleothc'),
+    # url(r'^oleoCBD/$', TemplateView.as_view(template_name='pages/oleocbd.html'), name='oleocbd'),
     url(r'^oleoTHC/send', send_email_thc, name='send_thc'),
-    url(r'^oleoCBD/send', send_email_cbd, name='send_cbd'),
+    # url(r'^oleoCBD/send', send_email_cbd, name='send_cbd'),
 
-    # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
 
     # User management
     url(r'^users/', include('oleo.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
-
-    # Your stuff: custom urls includes go here
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
