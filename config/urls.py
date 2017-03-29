@@ -14,7 +14,7 @@ urlpatterns = [
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
     url(r'^$', TemplateView.as_view(template_name='pages/oleothc.html'), name='oleothc'),
     # url(r'^oleoCBD/$', TemplateView.as_view(template_name='pages/oleocbd.html'), name='oleocbd'),
-    url(r'^/send', send_email_thc, name='send_thc'),
+    url(r'^send', send_email_thc, name='send_thc'),
     # url(r'^oleoCBD/send', send_email_cbd, name='send_cbd'),
 
     url(settings.ADMIN_URL, admin.site.urls),
